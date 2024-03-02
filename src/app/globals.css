@@ -43,8 +43,6 @@ body {
 }
 
 .card img {
-  width: 264px;
-  height: 160px;
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -53,7 +51,4 @@ body {
 .filterpage {
   display: flex;
   flex-wrap: wrap;
-}
-.btn {
-  background-color: aquamarine;
 }

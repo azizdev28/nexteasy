@@ -1,4 +1,5 @@
 import { Card } from "flowbite-react";
+import Image from "next/image";
 import React from "react";
 
 interface Country {
@@ -19,11 +20,12 @@ interface CardProps {
 
 const CardPage: React.FC<CardProps> = ({ country }) => {
   return (
-    <Card className="card w-60 flex flex-col text-start gap-x-2.5">
-      <img
+    <Card className="card w-60 flex flex-col text-start gap-x-2.5 p-5">
+      <Image
         src={country.flags.svg}
         alt={`${country.name.common} Flag`}
-        style={{ width: "100%", height: 120, margin: "0 auto" }}
+        width={260} // Specify the width
+        height={120} // Specify the height
       />
       <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         {country.name.common}
