@@ -10,7 +10,7 @@ interface Country {
   region: string;
   capital: string;
   flags: {
-    svg: string;
+    svg: any;
   };
 }
 

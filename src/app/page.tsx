@@ -81,7 +81,7 @@ const Home: React.FC = () => {
   );
 
   return (
-    <div className={`text-center`}>
+    <div className="text-center p-5">
       <div className="filterpage flex justify-between py-5 items-center px-20 wrap">
         <input
           type="text"
